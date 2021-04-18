@@ -1,0 +1,23 @@
+body {
+    background-color: #eaeaea;
+}
+
+h1,h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #252a34;
+}
+
+hr {
+    border-top: 1px solid #ff2e63;
+}
+
+.App {
+  font-family: sans-serif;
+  color: #252a34;
+  text-align: center;
+}
+
+/* wide padding from left and right as it is easier to read  */
+.posts {
+  padding:2% 15%;
+}
