@@ -5,10 +5,10 @@ import "./styles.css";
 
 function App() {
   const [posts, setPosts] = useState([]);
-  const url = "https://jsonplaceholder.typicode.com/posts";
+  const urlPosts = "https://jsonplaceholder.typicode.com/posts";
 
   useEffect(() => {
-    fetch(url)
+    fetch(urlPosts)
       .then((res) => {
         if (!res.ok) {
           return Error("Can't get the data required.");
@@ -17,7 +17,6 @@ function App() {
       })
       .then((data) => setPosts(data));
   });
-
   return (
     <div className="App">
       <Heading />
@@ -32,6 +31,5 @@ function App() {
     </div>
   );
 }
-
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
